@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: "Fjalla One";
+            text-align: center;
+        }
+
+        body {
+            background: url("assets/background.jpg") center center no-repeat;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .contact-us {
+            background: #f8f4e5;
+            padding: 50px 100px;
+            border: 2px solid black;
+            box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            font-size: 14pt;
+            line-height: 28pt;
+            font-family: "Fjalla One";
+            margin-bottom: 28pt;
+            border: none;
+            border-bottom: 5px solid black;
+            background: #f8f4e5;
+            min-width: 250px;
+            padding-left: 5px;
+            outline: none;
+            color: black;
+        }
+
+        input:focus {
+            border-bottom: 5px solid #ac80ff;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            line-height: 28pt;
+            padding: 0 20px;
+            background: #ac80ff;
+            letter-spacing: 2px;
+            transition: 0.2s all ease-in-out;
+            outline: none;
+            border: 1px solid black;
+            box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 2px black;
+        }
+
+        button:hover {
+            background: black;
+            color: white;
+            border: 1px solid black;
+        }
+
+        ::selection {
+            background: #ffc8ff;
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus {
+            border-bottom: 5px solid #95a4ff;
+            -webkit-text-fill-color: #2A293E;
+            -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+
+        .contact-us {
+            background: #f8f4e5;
+            padding: 50px 100px;
+            border: 2px solid black;
+            box-shadow: 15px 15px 1px #ac80ff, 15px 15px 1px 2px black;
+        }
+
+        select {
+            display: block;
+            width: 100%;
+            font-size: 14pt;
+            line-height: 28pt;
+            font-family: "Fjalla One";
+            margin-bottom: 28pt;
+            border: none;
+            border-bottom: 5px solid black;
+            background: #f8f4e5;
+            min-width: 250px;
+            outline: none;
+            color: black;
+        }
+
+        select:focus {
+            border-bottom: 5px solid #ac80ff;
+        }
+
+        ::selection {
+            background: #ffc8ff;
+        }
+
+        /*Estilos del menu*/
+        @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap");
+
+        nav {
+            font-family: "Roboto", sans-serif;
+            font-family: "Roboto Condensed", sans-serif;
+        }
+
+
+        .menu {
+            background-color: #343a40;
+            padding: 10px 0;
+        }
+
+        .menu-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu-item {
+            margin: 0 15px;
+        }
+
+        .menu-link {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .menu-link:hover {
+            color: rgb(40, 146, 167);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul class="menu-list">
+            <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+            <li class="menu-item"><a href="miprimerapagina.html" class="menu-link">Mi Primera Pagina</a></li>
+            <li class="menu-item"><a href="IlustracionSimple.html" class="menu-link">Una Ilustracion Simple</a></li>
+            <li class="menu-item"><a href="funeteparaeldocumento.html" class="menu-link">Fuente para todo el
+                    documento</a></li>
+            <li class="menu-item"><a href="talleruno.html" class="menu-link">Taller Uno</a></li>
+            <li class="menu-item"><a href="form.html" class="menu-link">Formulario</a></li>
+            <li class="menu-item"><a href="frame.html" class="menu-link">Frame</a></li>
+        </ul>
+    </nav>
+    <br>
+    <div class="contact-us">
+        <form>
+            <h1>FORMULARIO</h1>
+            <input placeholder="Nombre" required="" type="text" />
+            <input placeholder="Direccion" required="" type="text" />
+            <input name="Telefono" placeholder="Telefono" type="tel" />
+            <input placeholder="Email" required="" type="text" />
+            <select name="Escolaridad" class="selector">
+                <option value="">Selecciona una Opcion</option>
+                <option value="Primaria">Primaria</option>
+                <option value="Secundaria">Secundaria</option>
+                <option value="Preparatoria">Preparatoria</option>
+                <option value="Universidad">Universidad</option>
+                <option value="Maestria">Maestria</option>
+                <option value="Doctorado">Doctorado</option>
+            </select>
+            <select name="Escolaridad" class="selector">
+                <option value="">Selecciona una Opcion</option>
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
